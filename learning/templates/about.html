@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+<html>
+    <head>
+        <link rel = "stylesheet" href = '{% static "css/about.css" %}'>
+    </head>    
+<body>
+    
+    {% block content %}
+
+    inside about !
+    {{title}}
+
+    <a href = "{% url 'home' %}"> go to home</a>
+
+    {% endblock content %}
+
+</body>
+
+</html>

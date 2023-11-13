@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+    <head>
+        <link rel = "stylesheet" href = '{% static "css/ind.css" %}'>
+    </head>    
+<body>
+    {% include "header.html" %}
+    inside index !
+    {{title}}
+
+    {% for i in arr%}
+    {{i}}
+    {% endfor %}
+
+    <a href = "{% url 'about' %}"> go to about</a>
+
+    {% include "footer.html" %}
+</body>
+
+</html>
